@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="bg-page">
+    <div class="container">
+      <!--Header -->
+      <header class="header">
+        <div class="logo">
+          <img class="logo-img" src="assets/logo.svg" alt="logo">
+        </div>
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item navbar-item__current"><a class="navbar-link" href="index.html">Таблиці в HTML</a>
+            </li>
+            <li class="navbar-item"><a class="navbar-link" href="pages/table1.html">Таблиця 1</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="pages/table2.html">Таблиця 2</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--Main -->
+      <main class="main">
+        <h1 class="title">Таблиці в HTML</h1>
+        <div class="tables">
+          <!--Перша таблиця-->
+          <table class="table border-separate">
+            <caption class="table__title">Структура таблиці в HTML</caption>
+            <thead>
+              <tr>
+                <th>Елемент</th>
+                <th>Призначення</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="clr-blue">table</td>
+                <td>контейнер таблиці</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">thead</td>
+                <td>призначений для зберігання одного або декількох рядків, які
+                  представлені вгорі таблиці не більше одного елемента thead в межах
+                  однієї таблиці, і він повинен йти у вихідному коді відразу після тега</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">tbody</td>
+                <td>призначений для зберігання одного або кількох рядків таблиці</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">tr</td>
+                <td>рядок</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">td</td>
+                <td>клітинка.</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">th</td>
+                <td>текст жирним шрифтом та вирівнюванням посередині комірки.</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">tfoot</td>
+                <td>призначений для зберігання одного або кількох рядків, які
+                  представлені внизу таблиці.</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">caption</td>
+                <td>застосовують для назви таблиці</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2"><a href="pages/table2.html">Вкладені таблиці ...&gt;&gt;&gt; </a></td>
+              </tr>
+            </tfoot>
+
+          </table>
+          <!--Друга таблиця-->
+          <table class="table">
+            <caption class="table__title">Оформлення таблиць</caption>
+            <thead>
+              <tr>
+                <th>Атрибут</th>
+                <th>Значення</th>
+                <th>Призначення</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="clr-blue">border:</td>
+                <td>2px solid red</td>
+                <td>визначає межу таблиці або комірки</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">border-spacing:</td>
+                <td>5px 10px</td>
+                <td>Одне значення встановлює одночасно відстань по вертикалі та горизонталі між межами комірок. Якщо
+                  значень два, то перше визначає горизонтальну відстань, а друге — вертикальне.</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">border-collapse:</td>
+                <td>collapse<br>(separate - за замовчуванням)</td>
+                <td>Ця властивість потрібна, коли для комірок встановлені кордони, тоді в місці стику комірок буде лінія
+                  подвійної товщини. Між комірками залишться тільки один кордон, який одночасно належить обом коміркам.
+                </td>
+              </tr>
+              <tr>
+                <td class="clr-blue">rowspan</td>
+                <td>="2"</td>
+                <td>об'єднання по вертикалі (рядків)</td>
+              </tr>
+              <tr>
+                <td class="clr-blue">colspan</td>
+                <td>="3"</td>
+                <td>об'єднання по горизонталі (стовпців)</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="3"><a href="pages/table1.html">Таблиця з об'єднаними комірками ...&gt;&gt;&gt;</a></td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+      </main>
+      <!--Footer -->
+      <footer class="footer">
+        <div class="footer-item">&copy; Alina Scorpion</div>
+      </footer>
+
+    </div>
+  </div>
+</body>
+
+</html>
